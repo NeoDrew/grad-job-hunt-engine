@@ -1,0 +1,8 @@
+[
+  {
+    "company": "Example Co",
+    "role": "Sustainability Analyst",
+    "stage": "interview",
+    "note": "Live thread the log text can't infer cleanly — e.g. a recruiter call arranged off-portal. funnel.py merges these over what it parses from applications-log.md. Stages: applied|acknowledged|screening|assessment|interview|offer|rejected|withdrawn."
+  }
+]

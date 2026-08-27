@@ -1,0 +1,24 @@
+# ── Real candidate data & secrets — NEVER commit these ──
+# Ship the *.example templates; the real files below stay local. If you fill the
+# committed templates (candidate-facts.md, applications-log.md) with a real person's
+# data, treat this whole repo as private — it then contains their PII.
+data/credentials.md
+data/application-brief.md
+data/.adzuna.json
+data/funnel_overrides.json
+data/extra-seen.json
+
+# ── Runtime state / generated output ──
+data/seen.json
+data/sweep.log
+results/
+cover-letter/generated/
+
+# ── Python ──
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ── OS ──
+.DS_Store
