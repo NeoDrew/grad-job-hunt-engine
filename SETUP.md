@@ -93,6 +93,7 @@ rebuild, because the original was welded to a specific tool:
   logged-in Chrome (so the candidate's real ATS/Gmail sessions are intact) and is itself steered by
   an LLM coding agent. `ATS-PLAYBOOK.md` is written against its verbs (`fill_input`, `type_text`,
   `set_file_input`, `click_element`, `click_at_coordinates`, `execute_script`, ...).
+  Get it at **https://chromeflow.run** (or search "chromeflow" in the Chrome Web Store).
 - **What you need to provide:** any equivalent that can (a) drive a real browser with the candidate's
   sessions, (b) upload files to file inputs (incl. inside shadow DOM / iframes), (c) do a *trusted*
   click for reCAPTCHA/anti-bot submit buttons, and (d) run arbitrary JS in the page. Playwright or

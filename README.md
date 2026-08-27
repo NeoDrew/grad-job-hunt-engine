@@ -11,7 +11,7 @@ It is deliberately split into two tiers, because they have very different portab
 | Tier | What it does | Portability |
 |------|--------------|-------------|
 | **Discovery** (`engine/sweep.py` + `fitscore.py`) | Pull ATS JSON feeds + LinkedIn guest-API + Adzuna, filter to the candidate's criteria, score fit, de-dupe, write a dated digest, notify on new roles. | **High.** Pure Python stdlib, public APIs, no browser. Runs day one. |
-| **Applying** (`ATS-PLAYBOOK.md` + a browser tool) | Fill and submit each ATS as the candidate. | **Low.** Needs a browser-automation layer (this system used [chromeflow](SETUP.md)) + an LLM agent. You will likely rebuild this half. |
+| **Applying** (`ATS-PLAYBOOK.md` + a browser tool) | Fill and submit each ATS as the candidate. | **Low.** Needs a browser-automation layer (this system used [chromeflow](https://chromeflow.run)) + an LLM agent. You will likely rebuild this half. |
 
 So you get an excellent **finder** out of the box; the **auto-applier** is a documented recipe book you drive with your own tooling.
 
