@@ -69,6 +69,14 @@ playbook both enforce this; keep it true at the source.
 
 ---
 
+### Optional: daily headless auto-apply (`runners/daily-apply/`)
+
+`runners/daily-apply/run.sh` runs a headless Claude Code agent once a day. It reads `data/application-brief.md`, works the latest
+sweep digest top-down and applies to genuine fits through an already-logged-in Chrome (chromeflow), then sends one summary via
+`NOTIFY_CMD`. All candidate-specific rules (identity, location, excluded functions, do-not-apply list) live in the brief, not the
+prompt, so the runner is reusable as-is. Schedule it about 15 minutes after a sweep, e.g. launchd at 08:15. Test with
+`DAILY_LIMIT=2 runners/daily-apply/run.sh --now`. Generalised from a real 2026 graduate search that placed the candidate.
+
 ## 4. Scheduling the sweep
 
 Run `engine/sweep.py` on a schedule — twice a day (start + end of the working day) catches
